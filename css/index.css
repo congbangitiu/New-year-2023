@@ -31,7 +31,7 @@ h2 {
 }
 
 .peach-blossom {
-    position: fixed;
+    /* position: fixed; */
     width: 27%;
     /* height: 50%; */
     top: 0%;
@@ -93,6 +93,46 @@ h2 {
     bottom: 0%;
     left: 44%;
 }
+
+.apricot-blossom_2{
+    position: fixed;
+    width: 10%;
+    bottom: 24%;
+    right: 27%;
+    z-index: 10;
+}
+.apricot-blossom_1{
+    position: fixed;
+    width: 6%;
+    bottom: 33%;
+    left: 30%;
+    z-index: 10;
+}
+
+.cat {
+    position: fixed;
+    width: 5%;
+    top: 30.5%;
+    left: 39.5%;
+    z-index: 10;
+}
+.lion_dance_2 {
+    position: fixed;
+    width: 5%;
+    top: 30%;
+    right: 38%;
+    z-index: 10;
+}
+
+.lucky_money {
+    position: fixed;
+    width: 5%;
+    top: 43%;
+    right: 27%;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
 
 .contain-tree-flower .tree-flower {
     width: 100%;
@@ -192,7 +232,7 @@ h2 {
     /* left: 38%; */
     right: 0px;
     bottom: 0px;
-    width: 27%;
+    width: 28%;
     /* height: 45.5%; */
 }
 @keyframes animationTopDownTextTet {
