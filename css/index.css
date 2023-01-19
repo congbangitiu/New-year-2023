@@ -1,23 +1,107 @@
 body {
-    background-image: url("../imgs/img-tet5.jpg");
-    background-size: cover; 
+    background-image: url("https://www.xmple.com/wallpaper/yellow-gradient-highlight-linear-1920x1080-c2-ffffe0-f0e68c-l-33-a-150-f-21.svg");
+    background-size: 100%;
+    background-repeat: no-repeat; 
 }
 
+.wishing {
+    font-size: 25px;
+    color: #ff1e00;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #2c2c2c;
+    /* background-color: #d5d5d5; */
+    letter-spacing: .05em;
+    text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    padding-top: 40px;
+    margin-bottom: 60px;
+  }
+
 .apricot-blossom {
-    width: auto;
-    height: auto;
+    position: fixed;
+    width: 23%;
+    /* height: 50%; */
+    top: 0%;
+    right: 0%;
+    z-index: 4;
+}
+
+.peach-blossom {
+    position: fixed;
+    width: 27%;
+    /* height: 50%; */
+    top: 0%;
+    left: 0%;
     z-index: 4;
 }
 
 .contain-tree-flower {
-    opacity: 0;
+    /* opacity: 0; */
+}
+
+.petal {
+    position: fixed;
+    width: 2%;
+}
+.petal_1 {
+    left: 14%;
+    bottom: 3%;
+}
+.petal_2 {
+    left: 3%;
+    bottom: 1%;
+}
+.petal_3 {
+    left: 20%;
+    top: 40%;
+}
+.petal_4 {
+    left: 25%;
+    bottom: 0%;
+}
+.petal_5 {
+    left: 8%;
+    top: 48%;
+}
+.petal_6 {
+    left: 15%;
+    top: 50%;
+}
+.petal_7 {
+    left: 3%;
+    top: 55%;
+}
+.petal_8 {
+    left: 25%;
+    top: 52%;
+}
+
+.firework {
+    position: fixed;
+    width: 8%;
+    top: 32.5%;
+    right: 10%;
+}
+
+.lion_dance {
+    position: fixed;
+    width: 12%;
+    bottom: 0%;
+    left: 44%;
 }
 
 .contain-tree-flower .tree-flower {
     width: 100%;
     height: 100%;
+    left: 10px;
+    top: 0;
     position: absolute;
-    z-index: 3;
+    z-index: 10;
+    opacity: 0;
 }
 
 .contain-tree-flower:nth-child(1) {
@@ -40,7 +124,7 @@ body {
 .lentern {
     position: absolute;
     z-index: 10;
-    opacity: 1;
+    /* opacity: 1; */
     transition: 4s;
     transform: rotate(-45deg);
 }
@@ -94,21 +178,22 @@ body {
 
 .family {
     position: fixed;
-    opacity: 0;
+    /* opacity: 0.1; */
     transition: 3s;
     
 }
 .family:nth-child(4) {
-    left: 2.5%;
+    left: 1%;
     bottom: 5px;
-    width: 30%;
-    height: 40%;
+    width: 28%;
+    /* height: 40%; */
 }
 .family:nth-child(5) {
-    left: 45%;
-    bottom: 30px;
-    width: 20%;
-    height: 35%;
+    /* left: 38%; */
+    right: 0px;
+    bottom: 0px;
+    width: 27%;
+    /* height: 45.5%; */
 }
 @keyframes animationTopDownTextTet {
     to {
@@ -122,56 +207,57 @@ body {
 }
 @keyframes animationTopDownSlogan {
     to {
-        top: -15%;
+        top: -13%;
     }
 }
 .textTet {
-    position: fixed;
-    top: -7%;
-    width: 9%;
-    height: 32%;
-    left: 26%;
+    position: absolute;
+    top: -9%;
+    width: 10%;
+    /* height: 32%; */
+    left: 24%;
     z-index: 11;
     -webkit-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
     -moz-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .number {
+    /* text-align: center; */
     position: fixed;
     top: -8%;
     z-index: 11;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .number:nth-child(7) {
-    left: 35%;
+    left: 39%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
 }
 .number:nth-child(8) {
-    left: 40%;
+    left: 44%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
 }
 .number:nth-child(9) {
-    left: 45%;
+    left: 49%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
 }
 .number:nth-child(10) {
-    left: 50%;
+    left: 54%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
 }
 .slogan {
     position: fixed;
-    top: -20%;
-    width: 10%;
-    height: 44%;
-    left: 55%;
+    top: -10%;
+    width: 12%;
+    /* height: 44%; */
+    right: 24%;
     z-index: 11;
     -webkit-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
     -moz-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
-    opacity: 0;
+    /* opacity: 0; */
 }
 /* Container chứa đồng hồ đếm ngược */
 .clock {

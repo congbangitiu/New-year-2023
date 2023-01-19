@@ -29,11 +29,27 @@
         <img class="number" src="imgs/2_1.png" />
         <img class="number" src="imgs/3.png" />
         <img class="slogan" src="imgs/slogan.png" />
+        <img class="apricot-blossom" src="imgs/hoa-mai.png" />
+        <img class="peach-blossom" src="imgs/hoa-dao2.png" />
+        <img class="petal petal_1" src="imgs/canh-hoa-dao1.png" />
+        <img class="petal petal_2" src="imgs/canh-hoa-dao2.png" />
+        <img class="petal petal_3" src="imgs/canh-hoa-dao3.png" />
+        <img class="petal petal_4" src="imgs/canh-hoa-dao1.png" />
+        <img class="petal petal_5" src="imgs/canh-hoa-dao3.png" />
+        <img class="petal petal_6" src="imgs/canh-hoa-dao3.png" />
+        <img class="petal petal_7" src="imgs/canh-hoa-dao3.png" />
+        <img class="petal petal_8" src="imgs/canh-hoa-dao3.png" />
+        <img class="firework" src="imgs/firework.png" />
+        <img class="lion_dance" src="imgs/mualan.png" />
+
+
         
 <body>
 <div class="container">
 <br>
-<h2 style="color: red" ><span>HAPPY</span>New Year 2023</h2>
+<h2 style="color: red" ><span>HAPPY</span>New Year</h2>
+
+
 <div class="countdown">
 <div id="day">Chúc</div>
 <div id="hour">Mừng</div>
@@ -41,10 +57,10 @@
 <div id="second">Mới</div>
 </div>
 <div id="taitro">
-<a style="color: #ff1e00" class="btn btn-outline-warning btn-sm" target="_blank">“Wishing you a happy and prosperous New Year, full of love and joy.”</a>
+<div class="wishing">“Wishing you a happy and prosperous New Year, full of love and joy.”</div>
 </div>
 </div>
-<div class="apricot-blossom"><img src="../Pháo Hoa 2023/imgs/hoa-mai.png" alt="" ></div> 
+<!-- <div class="apricot-blossom"><img src="../Pháo Hoa 2023/imgs/hoa-mai.png" alt="" ></div>  -->
 
 <script type="text/javascript">
         var countDate = new Date('Jan 22, 2023 00:00:00').getTime();
@@ -108,7 +124,7 @@ body
     display: block;
     font-weight: 300;
     letter-spacing: 6px;
-    font-size: 0.2em;
+    font-size: 0.3em;
 }
 .countdown
 {
@@ -133,7 +149,7 @@ body
 {
     content: '';
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     left: 0;
     width: 100%;
     height: 35px;
@@ -142,22 +158,23 @@ body
     font-size: 0.35em;
     line-height: 35px;
     font-weight: 300;
+    border-radius: 20px;
 }
 .countdown div#day:before
 {
-    content: 'NGÀY';
+    content: 'DAYS';
 }
 .countdown div#hour:before
 {
-    content: 'GIỜ';
+    content: 'HOURS';
 }
 .countdown div#minute:before
 {
-    content: 'PHÚT';
+    content: 'MINUTES';
 }
 .countdown div#second:before
 {
-    content: 'GIÂY';
+    content: 'SECONDS';
 }
 
 #taitro {
@@ -171,12 +188,13 @@ body
 }
 
 .music-box {
-    position: fixed;
+    position: absolute;
     width: 300px;
     height: 160px;
-    z-index: 120;
+    z-index: 0;
     bottom: 30px;
-    left: 30px
+    left: 30px;
+    display: none;
 }
 
 .music-box a {
@@ -242,11 +260,11 @@ body
 
 .music-box .toggle-music-box {
     top: -50px;
-    visibility: visible;
-    opacity: 1
+    visibility: hidden;
+    opacity: 1;
 }
     </style>
-    <audio controls="audio" autoplay="audio" src="intro.mp3"></audio>
+    <audio controls autoplay hidden controls="audio" autoplay="audio" src=""></audio>
 </body>
 </body>
 </html>
